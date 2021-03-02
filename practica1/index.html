@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica 1 vue</title>
+
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    
+<div id="app">
+
+    <h1> {{ titulo }} </h1>
+    <br>
+    <h2> {{ saludo + ' Hechenle ganas'}} </h2>
+    <hr>
+    <h2>       
+        {{ (cantidad >=1000 ? 'Es mayor a MIL PESOS' : 'Es menor a MIL') }}
+    </h2>
+</div><!--app-->
+
+
+
+<script src="main.js"></script>
+<script>
+    const mountedApp = app.mount('#app');
+</script>
+
+</body>
+</html>
